@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Starbucks Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/MediaQueries.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" alt="logo" />
+      <ul>
+        <li class="nav-link-wrapper"><a href="">Home</a></li>
+        <li class="nav-link-wrapper"><a href="">Menu</a></li>
+        <li class="nav-link-wrapper"><a href="">What's New</a></li>
+        <li class="nav-link-wrapper"><a href="">Contact</a></li>
+      </ul>
+      <img src="img/moon.png" id="icon" />
+    </nav>
+
+    <div class="circle"></div>
+    <div class="container minHeight">
+      <div class="left-side">
+        <h1>
+          It's not just Coffee <br />
+          It's <span class="green"> Starbucks </span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
+          sunt cumque pariatur sint dignissimos odio sit facilis porro veritatis
+          earum itaque similique voluptatem dolores est ipsum, sequi non
+          temporibus, quae.
+        </p>
+        <a>Learn More</a>
+      </div>
+      <div class="right-side">
+        <img src="img/img1.png" alt="starbucks" class="starbucks" />
+        <div class="box">
+          <a href="#">
+            <img class="facebook" src="img/facebook.png" alt=""
+          /></a>
+          <a href="#"> <img src="img/instagram.png" alt="" /></a>
+          <a href="#"> <img src="img/twitter.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="thumb">
+      <a
+        ><img
+          src="img/thumb1.png"
+          onclick="imgSlider('img/img1.png');changeCircleColor('#017143')"
+        />
+      </a>
+      <a
+        ><img
+          src="img/thumb2.png"
+          onclick="imgSlider('img/img2.png');changeCircleColor('#eb7495')"
+        />
+      </a>
+      <a
+        ><img
+          src="img/thumb3.png"
+          onclick="imgSlider('img/img3.png');changeCircleColor('#d752b1')"
+        />
+      </a>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
