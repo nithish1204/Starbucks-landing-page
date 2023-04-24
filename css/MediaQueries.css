@@ -90,7 +90,7 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   .circle {
     z-index: -1;
     position: absolute;
@@ -101,20 +101,60 @@
     background: #017143;
     clip-path: circle(200px at center 750px);
   }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    height: 20px;
-    padding: 20px;
-    height: var(--navHeight);
+
+  nav .menu-btn {
+    display: block;
   }
 
-  nav ul {
-    display: none;
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
   }
 
   nav img {
-    width: 50px;
+    width: 40px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+  }
+
+  #icon {
+    margin-right: 30px;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s ease;
+    /* display: block; */
+  }
+
+  nav ul li {
+    margin: 40px 0;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    display: block;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: green;
   }
 
   .container {
@@ -154,7 +194,7 @@
   }
 }
 
-@media only screen and (max-width: 404px) {
+/* @media only screen and (max-width: 404px) {
   .circle {
     z-index: -1;
     position: absolute;
@@ -220,4 +260,4 @@
     width: 45px;
     margin: 20px;
   }
-}
+} */

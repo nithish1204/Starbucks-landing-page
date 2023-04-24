@@ -11,7 +11,6 @@ body {
 :root {
   --primary-color: #edf2f2;
   --secondary-color: #212121;
-  --navHeight: 40px;
 }
 
 .dark-theme {
@@ -36,7 +35,7 @@ nav {
   justify-content: center;
   width: 90%;
   padding: 20px;
-  height: var(--navHeight);
+  height: 40px;
   margin: 10px auto;
 }
 
@@ -64,6 +63,28 @@ nav ul li a {
   margin: 10px;
   text-decoration: none;
   color: var(--secondary-color);
+  /* transition: all 250ms ease; */
+}
+
+#click {
+  display: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: var(--secondary-color);
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+nav .menu-btn {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding-right: 30px;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 .container {

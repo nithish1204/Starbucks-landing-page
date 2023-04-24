@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Viga&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2c6616fa2b.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
@@ -18,14 +22,18 @@
   </head>
   <body>
     <nav>
-      <img src="img/logo.png" alt="logo" />
+      <img class="logo" src="img/logo.png" alt="logo" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul>
-        <li class="nav-link-wrapper"><a href="">Home</a></li>
-        <li class="nav-link-wrapper"><a href="">Menu</a></li>
-        <li class="nav-link-wrapper"><a href="">What's New</a></li>
-        <li class="nav-link-wrapper"><a href="">Contact</a></li>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">What's New</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
-      <img src="img/moon.png" id="icon" />
+      <img class="moon" src="img/moon.png" id="icon" />
     </nav>
 
     <div class="circle"></div>
